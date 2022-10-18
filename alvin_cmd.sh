@@ -28,3 +28,7 @@ function upload(){
 function sync(){
   git pull && gclient sync -D && build
 }
+
+function squash(){
+  git rebase -i HEAD~$1
+}
