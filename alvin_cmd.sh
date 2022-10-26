@@ -11,7 +11,7 @@ function wpt(){
 }
 
 function build(){
-  autoninja -C out/Default "$1"
+  format && autoninja -C out/Default "$1"
 }
 
 function format(){
