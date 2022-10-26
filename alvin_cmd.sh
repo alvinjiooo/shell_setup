@@ -30,5 +30,5 @@ function sync(){
 }
 
 function squash(){
-  git rebase -i HEAD~$1
+  git rebase -i origin/HEAD
 }
