@@ -1,0 +1,5 @@
+# Source for custom alias and command
+cd ~/shell_setup/ 
+git pull
+cd ~
+. ~/shell_setup/alvin_cmd.ps1
