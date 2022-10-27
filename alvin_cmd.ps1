@@ -1,18 +1,29 @@
+#!/bin/bash
+
+# Put all my custom command here
+
 function hey(){
   echo "Test Success!"
 }
 
 function wpt(){
-  third_party/blink/tools/run_web_tests.py -t Default "$1"
+  third_party/blink/tools/run_web_tests.py -t Default $args[0]
 }
 
 function build(){
-  (format) -and (autoninja -C out/Default "$1")
+ if( $args[0] ){
+   format 
+   autoninja -C out/Default $args[0]
+ }
+ else{
+   format
+   autoninja -C out/Default chrome
+ }
 }
 
 function format(){
- if ( -z "$1" ){
-   git cl format "$1"
+ if ( $args[0] ){
+   git cl format $args[0]
  }
  else{
    git cl format
