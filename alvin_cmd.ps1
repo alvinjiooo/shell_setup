@@ -31,11 +31,14 @@ function format(){
 }
 
 function upload(){
-  (git cl upload -T) -and (git cl try)
+  git cl upload -T
+  git cl try
 }
 
 function sync(){
-  (git pull) -and (gclient sync -D) -and (build)
+  git pull
+  gclient sync -D 
+  build
 }
 
 function squash(){
