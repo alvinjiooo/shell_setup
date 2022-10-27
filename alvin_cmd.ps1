@@ -12,10 +12,10 @@ function build(){
 
 function format(){
  if ( -z "$1" ){
-  git cl format "$1"
+   git cl format "$1"
  }
  else{
-	 git cl format
+   git cl format
  }
 }
 
