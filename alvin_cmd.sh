@@ -34,5 +34,5 @@ function squash(){
 }
 
 function server(){
-  http-server -S -C cert.pem -o
+  http-server -S -C cert.pem -o -a localhost -p 8000 -c-1
 }
