@@ -32,3 +32,7 @@ function sync(){
 function squash(){
   git rebase -i origin/HEAD
 }
+
+function server(){
+  http-server -S -C cert.pem -o
+}
