@@ -36,3 +36,7 @@ function squash(){
 function server(){
   http-server -S -C cert.pem -o -a localhost -p 8000 -c-1
 }
+
+function pserver(){
+  python3 -m http.server 8080 -b 127.0.0.1
+}
