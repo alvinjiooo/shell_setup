@@ -40,3 +40,7 @@ function server(){
 function pserver(){
   python3 -m http.server 8080 -b 127.0.0.1
 }
+
+function addlog(){
+  python3 ~/shell_setup/add_log.py "$1"
+}
