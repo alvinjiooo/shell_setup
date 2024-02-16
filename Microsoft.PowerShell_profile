@@ -1,5 +1,5 @@
 # start goma daemon
-goma_ctl ensure_start
+# goma_ctl ensure_start
 
 # Source for custom alias and command
 cd ~/shell_setup/ 
