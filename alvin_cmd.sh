@@ -14,6 +14,10 @@ function build(){
   format && autoninja -C out/Default "$1"
 }
 
+function bcros(){
+   autoninja -C out_$BOARD/Release chrome
+}
+
 function format(){
  if [ -z "$1" ]
  then git cl format "$1"
