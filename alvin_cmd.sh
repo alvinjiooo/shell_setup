@@ -30,7 +30,7 @@ function upload(){
 }
 
 function sync(){
-  git pull && gclient sync -D && build chrome
+  git pull && gclient sync -D -f && build chrome
 }
 
 function squash(){
