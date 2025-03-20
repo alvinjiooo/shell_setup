@@ -49,4 +49,8 @@ function addlog(){
   python3 ~/shell_setup/add_log.py "$1"
 }
 
+function amend(){
+  git add . && git commit --amend
+}
+
 alias refcheck='gn refs out/Default $1 --type=executable --all'
